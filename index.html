@@ -239,6 +239,41 @@
             --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
         }
 
+        .partners-item {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background: #0b0b0b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            transition: all .3s ease;
+        }
+
+        .partners-item img {
+            max-width: 75%;
+            max-height: 75%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: .8;
+            transition: all .3s ease;
+        }
+
+        .swiper-slide-active .partners-item,
+        .partners-item:hover {
+            border: 1px solid rgba(255, 255, 255, .8);
+        }
+
+        .swiper-slide-active .partners-item img,
+        .partners-item:hover img {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
         :where(.is-layout-flex) {
             gap: 0.5em;
         }
@@ -827,7 +862,7 @@
                                                         <span class="text-body-2">About</span>
                                                     </a>
                                                 </li>
-                                                <li>
+                                                <!-- <li>
                                                     <a class="scroll-to" href="#testimonial">
                                                         <i class="icon icon-poll-h-solid"></i>
                                                         <span class="text-body-2">Testimonial</span>
@@ -856,7 +891,7 @@
                                                         <i class="icon icon-comment-alt-solid"></i>
                                                         <span class="text-body-2">FAQs</span>
                                                     </a>
-                                                </li>
+                                                </li> -->
                                                 <li>
                                                     <a class="scroll-to" href="#contact">
                                                         <i class="icon icon-envelope-solid"></i>
@@ -875,22 +910,18 @@
                                             <div class="heading text-body-1 dot-before">Social Network</div>
                                             <ul class="social-links">
                                                 <li>
-                                                    <a href="#" target="_blank">
-                                                        <i class="icon icon-twitter-x"></i>
+                                                    <a href="https://github.com/DarbinyanNshan" target="_blank">
+                                                        <i class="icon icon-github"></i>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" target="_blank">
-                                                        <i class="icon icon-dribbble"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" target="_blank">
+                                                    <a href="https://www.instagram.com/darbinyan_883/" target="_blank">
                                                         <i class="icon icon-instagram"></i>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" target="_blank">
+                                                    <a href="https://www.facebook.com/nshan.darbinyan.5"
+                                                        target="_blank">
                                                         <i class="icon icon-facebook-f"></i>
                                                     </a>
                                                 </li>
@@ -924,8 +955,8 @@
                                                     <a href="javascript:void(0);" class="choose-item  "></a>
                                                     <a href="javascript:void(0);" class="choose-item  "></a>
                                                 </div>
-                                                <h6 class="title">THREE DIMENSIONAL SHAPES</h6>
-                                                <ul class="settings-themes">
+                                                <!-- <h6 class="title">THREE DIMENSIONAL SHAPES</h6> -->
+                                                <!-- <ul class="settings-themes">
                                                     <li>
                                                         <a href="https://wpriverthemes.com/jayden/home-version-one/"
                                                             class="active">Liquids Wavy </a>
@@ -950,7 +981,7 @@
                                                         <a href="https://wpriverthemes.com/jayden/home-version-one-v6"
                                                             class="">Simple Strings </a>
                                                     </li>
-                                                </ul>
+                                                </ul> -->
                                             </div>
                                         </div>
                                     </div>
@@ -1026,9 +1057,9 @@
                             <!-- left-sidebar -->
                             <div class="left-sidebar">
                                 <div class="heading">
-                                    <img decoding="async"
+                                    <!-- <img decoding="async"
                                         src="https://wpriverthemes.com/jayden/wp-content/themes/jayden/images/logo/logo-1.svg"
-                                        alt="Logo">
+                                        alt="Logo"> -->
                                     <!-- <div class="box-status">
                                             <div class="dot"></div>
                                             <div class="text-body-1">
@@ -1056,25 +1087,21 @@
                                 </div>
                                 <ul class="social-links justify-content-center">
                                     <li>
-                                        <a href="#" target="_blank">
-                                            <i class="icon icon-twitter-x"></i>
+                                        <a href="https://github.com/DarbinyanNshan" target="_blank">
+                                            <i class="icon icon-github"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" target="_blank">
-                                            <i class="icon icon-dribbble"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank">
+                                        <a href="https://www.instagram.com/darbinyan_883/" target="_blank">
                                             <i class="icon icon-instagram"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" target="_blank">
+                                        <a href="https://www.facebook.com/nshan.darbinyan.5" target="_blank">
                                             <i class="icon icon-facebook-f"></i>
                                         </a>
                                     </li>
+                                </ul>
                                 </ul>
                                 <a href="#contact" class="bot-button">
                                     <div class="text-body-1 text">Get Started</div>
@@ -1530,16 +1557,22 @@
                                                     <div class="text-body-2 dot-before subtitle fw-medium">About Me
                                                     </div>
                                                     <div>
-                                                        <h2 class="fw-medium title text-color-change">Building modern websites that combine functionality and user experience. </h2>
-                                                        <div class="text-body-2 text">I am a Web Developer specializing in creating responsive, fast, 
-                                                            and user-friendly websites. I work with modern web technologies to
-                                                             build scalable digital solutions, focusing on performance, clean code, 
-                                                             and seamless user experiences. </div>
+                                                        <h2 class="fw-medium title text-color-change">Building modern
+                                                            websites that combine functionality and user experience.
+                                                        </h2>
+                                                        <div class="text-body-2 text">I am a Web Developer specializing
+                                                            in creating responsive, fast,
+                                                            and user-friendly websites. I work with modern web
+                                                            technologies to
+                                                            build scalable digital solutions, focusing on performance,
+                                                            clean code,
+                                                            and seamless user experiences. </div>
                                                     </div>
                                                 </div>
                                                 <div class="box-playground">
                                                     <div class="top">
-                                                        <div class="text-body-1 fw-medium instagram-tag">@high.tech_services
+                                                        <div class="text-body-1 fw-medium instagram-tag">
+                                                            @high.tech_services
                                                         </div>
                                                         <div class="box-nav style-1">
                                                             <div class="nav-sw navigation-prev-playground">
@@ -1580,7 +1613,7 @@
                                                                             alt="">
                                                                     </a>
                                                                 </div>
-                            
+
                                                                 <div class="swiper-slide">
                                                                     <a href="https://darbinyannshan.github.io/portfolio-site/images/works1-1.png"
                                                                         data-lightbox="example-2">
@@ -1617,7 +1650,7 @@
                                                                             alt="">
                                                                     </a>
                                                                 </div>
-                                                                 <div class="swiper-slide">
+                                                                <div class="swiper-slide">
                                                                     <a href="https://darbinyannshan.github.io/portfolio-site/images/works3-2.png"
                                                                         data-lightbox="example-2">
                                                                         <img decoding="async" class="lazyload"
@@ -1626,7 +1659,7 @@
                                                                             alt="">
                                                                     </a>
                                                                 </div>
-                                                                 <div class="swiper-slide">
+                                                                <div class="swiper-slide">
                                                                     <a href="https://darbinyannshan.github.io/portfolio-site/images/works3-3.png"
                                                                         data-lightbox="example-2">
                                                                         <img decoding="async" class="lazyload"
@@ -1635,7 +1668,7 @@
                                                                             alt="">
                                                                     </a>
                                                                 </div>
-                                                                 <div class="swiper-slide">
+                                                                <div class="swiper-slide">
                                                                     <a href="https://darbinyannshan.github.io/portfolio-site/images/works3-4.png"
                                                                         data-lightbox="example-2">
                                                                         <img decoding="async" class="lazyload"
@@ -1717,30 +1750,6 @@
                                                             </div>
                                                         </div>
                                                         <div class="swiper-slide">
-                                                            <div class="tech-stack-item">
-                                                                <h3 class="fw-medium title">Monday</h3>
-                                                                <div class="image">
-                                                                    <img decoding="async"
-                                                                        src="https://wpriverthemes.com/jayden/wp-content/themes/jayden/images/section/monday.png"
-                                                                        alt="Monday">
-                                                                </div>
-                                                                <!-- <div class="text-body-1">Leading collaborative design
-                                                                    tool </div> -->
-                                                            </div>
-                                                        </div>
-                                                           <div class="swiper-slide">
-                                                            <div class="tech-stack-item">
-                                                                <h3 class="fw-medium title">Monday</h3>
-                                                                <div class="image">
-                                                                    <img decoding="async"
-                                                                        src="https://wpriverthemes.com/jayden/wp-content/themes/jayden/images/section/monday.png"
-                                                                        alt="Monday">
-                                                                </div>
-                                                                <!-- <div class="text-body-1">Leading collaborative design
-                                                                    tool </div> -->
-                                                            </div>
-                                                        </div>
-                                                           <div class="swiper-slide">
                                                             <div class="tech-stack-item">
                                                                 <h3 class="fw-medium title">Monday</h3>
                                                                 <div class="image">
@@ -1887,43 +1896,43 @@
                                                 <div class="text-body-2 dot-before subtitle">Clients </div>
                                                 <h2 class="desc text-color-change text-tab">
                                                     <span></span>
-                                                    Haven offers more than just a place to live it’s a space designed to
-                                                    reflect your unique style inspiration
+                                                    Websites and digital experiences crafted for businesses across
+                                                    different industries.
                                                 </h2>
                                                 <div class="swiper slider-partners swiper-auto">
                                                     <div class="swiper-wrapper">
                                                         <div class="swiper-slide">
                                                             <div class="partners-item">
                                                                 <img decoding="async"
-                                                                    src="https://wpriverthemes.com/jayden/wp-content/themes/jayden/images/partners/logo_zm.svg"
+                                                                    src="../home-version-one/images/adc.png"
                                                                     alt="Partner Logo">
                                                             </div>
                                                         </div>
                                                         <div class="swiper-slide">
                                                             <div class="partners-item">
                                                                 <img decoding="async"
-                                                                    src="https://wpriverthemes.com/jayden/wp-content/themes/jayden/images/partners/Union.svg"
+                                                                    src="../home-version-one/images/ecoclim.png"
                                                                     alt="Partner Logo">
                                                             </div>
                                                         </div>
                                                         <div class="swiper-slide">
                                                             <div class="partners-item">
                                                                 <img decoding="async"
-                                                                    src="https://wpriverthemes.com/jayden/wp-content/themes/jayden/images/partners/archin.svg"
+                                                                    src="../home-version-one/images/rafojakh.svg"
                                                                     alt="Partner Logo">
                                                             </div>
                                                         </div>
                                                         <div class="swiper-slide">
                                                             <div class="partners-item">
                                                                 <img decoding="async"
-                                                                    src="https://wpriverthemes.com/jayden/wp-content/themes/jayden/images/partners/Symbol.svg"
+                                                                    src="../home-version-one/images/karelnYesayan.png"
                                                                     alt="Partner Logo">
                                                             </div>
                                                         </div>
                                                         <div class="swiper-slide">
                                                             <div class="partners-item">
                                                                 <img decoding="async"
-                                                                    src="https://wpriverthemes.com/jayden/wp-content/themes/jayden/images/partners/Github_logo.svg"
+                                                                    src="../home-version-one/images/armta.png"
                                                                     alt="Partner Logo">
                                                             </div>
                                                         </div>
@@ -1944,23 +1953,29 @@
                                         <div class="row">
                                             <div
                                                 class="offset-xxl-5 col-xxl-7 offset-xl-4 col-xl-7 offset-lg-2 col-lg-8">
+
                                                 <div class="text-display-2 fw-medium heading split-text effect-right">
-                                                    Work Process </div>
+                                                    Work Process
+                                                </div>
+
                                                 <div class="swiper slider-process swiper-auto">
                                                     <div class="swiper-wrapper">
+
                                                         <div class="swiper-slide">
                                                             <div class="process-item">
                                                                 <div class="content">
                                                                     <div
                                                                         class="step text-body-2 fw-medium dot-before type-tags">
-                                                                        Step 1 </div>
+                                                                        Step 1
+                                                                    </div>
                                                                     <div class="wrap">
                                                                         <h2 class="fw-medium title">
-                                                                            Review <br>The Brief
+                                                                            Requirement <br>Gathering
                                                                         </h2>
-                                                                        <div class="text-body-2 fw-medium text">I
-                                                                            created digital products with ideas use
-                                                                            Figma </div>
+                                                                        <div class="text-body-2 fw-medium text">
+                                                                            Collect client requirements, define project
+                                                                            scope, and gather references and ideas.
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="image">
@@ -1968,18 +1983,22 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+
                                                         <div class="swiper-slide">
                                                             <div class="process-item">
                                                                 <div class="content">
                                                                     <div
                                                                         class="step text-body-2 fw-medium dot-before type-tags">
-                                                                        Step 2 </div>
+                                                                        Step 2
+                                                                    </div>
                                                                     <div class="wrap">
-                                                                        <h2 class="fw-medium title">Sketch the Wireframe
+                                                                        <h2 class="fw-medium title">
+                                                                            Research & <br>Planning
                                                                         </h2>
-                                                                        <div class="text-body-2 fw-medium text">I
-                                                                            created digital products with ideas use
-                                                                            Figma </div>
+                                                                        <div class="text-body-2 fw-medium text">
+                                                                            Analyze competitors, choose technologies,
+                                                                            and plan project architecture.
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="image">
@@ -1987,18 +2006,22 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+
                                                         <div class="swiper-slide">
                                                             <div class="process-item">
                                                                 <div class="content">
                                                                     <div
                                                                         class="step text-body-2 fw-medium dot-before type-tags">
-                                                                        Step 3 </div>
+                                                                        Step 3
+                                                                    </div>
                                                                     <div class="wrap">
-                                                                        <h2 class="fw-medium title">Design Progress
+                                                                        <h2 class="fw-medium title">
+                                                                            Wireframe & <br>UI Design
                                                                         </h2>
-                                                                        <div class="text-body-2 fw-medium text">I
-                                                                            created digital products with ideas use
-                                                                            Figma </div>
+                                                                        <div class="text-body-2 fw-medium text">
+                                                                            Create wireframes, design layouts, and
+                                                                            define user experience structure.
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="image">
@@ -2006,19 +2029,22 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+
                                                         <div class="swiper-slide">
                                                             <div class="process-item">
                                                                 <div class="content">
                                                                     <div
                                                                         class="step text-body-2 fw-medium dot-before type-tags">
-                                                                        Step 4 </div>
+                                                                        Step 4
+                                                                    </div>
                                                                     <div class="wrap">
                                                                         <h2 class="fw-medium title">
-                                                                            Product <br>Examination
+                                                                            Development
                                                                         </h2>
-                                                                        <div class="text-body-2 fw-medium text">I
-                                                                            created digital products with ideas use
-                                                                            Figma </div>
+                                                                        <div class="text-body-2 fw-medium text">
+                                                                            Convert UI design into a functional website
+                                                                            using HTML, CSS, JavaScript, and frameworks.
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="image">
@@ -2026,16 +2052,64 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+
+                                                        <div class="swiper-slide">
+                                                            <div class="process-item">
+                                                                <div class="content">
+                                                                    <div
+                                                                        class="step text-body-2 fw-medium dot-before type-tags">
+                                                                        Step 5
+                                                                    </div>
+                                                                    <div class="wrap">
+                                                                        <h2 class="fw-medium title">
+                                                                            Testing & <br>Optimization
+                                                                        </h2>
+                                                                        <div class="text-body-2 fw-medium text">
+                                                                            Test across browsers and devices, fix bugs,
+                                                                            and optimize performance.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="image">
+                                                                    <div class="gradient-icon gradient-icon-4"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="swiper-slide">
+                                                            <div class="process-item">
+                                                                <div class="content">
+                                                                    <div
+                                                                        class="step text-body-2 fw-medium dot-before type-tags">
+                                                                        Step 6
+                                                                    </div>
+                                                                    <div class="wrap">
+                                                                        <h2 class="fw-medium title">
+                                                                            Deployment & <br>Maintenance
+                                                                        </h2>
+                                                                        <div class="text-body-2 fw-medium text">
+                                                                            Deploy the project to production, manage
+                                                                            hosting, and maintain updates.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="image">
+                                                                    <div class="gradient-icon gradient-icon-4"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
                                                     </div>
                                                 </div>
                                                 <!-- /.swiper -->
+
                                             </div>
                                         </div>
                                     </div>
                                 </section>
                             </div>
                         </div>
-                        <div class="elementor-element elementor-element-c2e9cc4 elementor-widget elementor-widget-home1_awards"
+                        <!-- <div class="elementor-element elementor-element-c2e9cc4 elementor-widget elementor-widget-home1_awards"
                             data-id="c2e9cc4" data-element_type="widget" data-e-type="widget"
                             data-widget_type="home1_awards.default">
                             <div class="elementor-widget-container">
@@ -2076,7 +2150,7 @@
                                     </div>
                                 </section>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- <div class="elementor-element elementor-element-fd0d564 elementor-widget elementor-widget-home1_pricing"
                             data-id="fd0d564" data-element_type="widget" data-e-type="widget"   
                             data-widget_type="home1_pricing.default">
